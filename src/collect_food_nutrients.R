@@ -3,10 +3,10 @@ library(jsonlite)
 library(dplyr)
 library(purrr)
 
-api_key <- "MvBTNqqBAgVlqcDRQEf4VNw0eclyMxMAZ8U1nuyZ"  # <-- replace with your USDA API key
+api_key <- "MvBTNqqBAgVlqcDRQEf4VNw0eclyMxMAZ8U1nuyZ" 
 
 get_food_nutrients_safe <- function(food_name, debug = TRUE) {
-  # Step 1: Search for food
+  # Search for food
   search_url <- paste0(
     "https://api.nal.usda.gov/fdc/v1/foods/search?query=",
     URLencode(food_name),
@@ -18,7 +18,7 @@ get_food_nutrients_safe <- function(food_name, debug = TRUE) {
   
   fdc_id <- search_data$foods$fdcId[1]
   
-  # Step 2: Get food detail
+  # Get food detail
   food_url <- paste0("https://api.nal.usda.gov/fdc/v1/food/", fdc_id, "?api_key=", api_key)
   food_res <- GET(food_url)
   food_data <- fromJSON(content(food_res, "text"), simplifyVector = FALSE)
@@ -34,7 +34,7 @@ get_food_nutrients_safe <- function(food_name, debug = TRUE) {
     print(str(food_data$foodNutrients[[1]], max.level = 2))
   }
   
-  # Step 3: Safely extract data rows
+  # Safely extract data rows
   rows <- lapply(food_data$foodNutrients, function(x) {
     # Case 1: Nested nutrient list
     if (!is.null(x$nutrient) && is.list(x$nutrient)) {
