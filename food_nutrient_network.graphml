@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_name" for="node" attr.name="name" attr.type="string"/>
+  <key id="v_type" for="node" attr.name="type" attr.type="boolean"/>
+  <key id="e_value_per_100kcal" for="edge" attr.name="value_per_100kcal" attr.type="double"/>
+  <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
+  <graph id="G" edgedefault="undirected">
+    <node id="n0">
+      <data key="v_name">oats</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n1">
+      <data key="v_name">eggs</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n2">
+      <data key="v_name">spinach</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n3">
+      <data key="v_name">milk</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n4">
+      <data key="v_name">Energy</data>
+      <data key="v_type">true</data>
+    </node>
+    <node id="n5">
+      <data key="v_name">Vitamin E (alpha-tocopherol)</data>
+      <data key="v_type">true</data>
+    </node>
+    <node id="n6">
+      <data key="v_name">Calcium, Ca</data>
+      <data key="v_type">true</data>
+    </node>
+    <node id="n7">
+      <data key="v_name">Iron, Fe</data>
+      <data key="v_type">true</data>
+    </node>
+    <node id="n8">
+      <data key="v_name">Magnesium, Mg</data>
+      <data key="v_type">true</data>
+    </node>
+    <node id="n9">
+      <data key="v_name">Potassium, K</data>
+      <data key="v_type">true</data>
+    </node>
+    <node id="n10">
+      <data key="v_name">Zinc, Zn</data>
+      <data key="v_type">true</data>
+    </node>
+    <node id="n11">
+      <data key="v_name">Vitamin C, total ascorbic acid</data>
+      <data key="v_type">true</data>
+    </node>
+    <node id="n12">
+      <data key="v_name">Folate, total</data>
+      <data key="v_type">true</data>
+    </node>
+    <node id="n13">
+      <data key="v_name">Vitamin B-12</data>
+      <data key="v_type">true</data>
+    </node>
+    <node id="n14">
+      <data key="v_name">Vitamin A, RAE</data>
+      <data key="v_type">true</data>
+    </node>
+    <node id="n15">
+      <data key="v_name">Vitamin D (D2 + D3)</data>
+      <data key="v_type">true</data>
+    </node>
+    <edge source="n0" target="n4">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n0" target="n4">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n0" target="n5">
+      <data key="e_value_per_100kcal">1.6289592760181</data>
+      <data key="e_weight">1.6289592760181</data>
+    </edge>
+    <edge source="n1" target="n4">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n1" target="n4">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n2" target="n4">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n2" target="n4">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n2" target="n6">
+      <data key="e_value_per_100kcal">95.9302325581395</data>
+      <data key="e_weight">95.9302325581395</data>
+    </edge>
+    <edge source="n2" target="n7">
+      <data key="e_value_per_100kcal">0.691860465116279</data>
+      <data key="e_weight">0.691860465116279</data>
+    </edge>
+    <edge source="n2" target="n8">
+      <data key="e_value_per_100kcal">17.4418604651163</data>
+      <data key="e_weight">17.4418604651163</data>
+    </edge>
+    <edge source="n2" target="n9">
+      <data key="e_value_per_100kcal">134.302325581395</data>
+      <data key="e_weight">134.302325581395</data>
+    </edge>
+    <edge source="n2" target="n10">
+      <data key="e_value_per_100kcal">0.494186046511628</data>
+      <data key="e_weight">0.494186046511628</data>
+    </edge>
+    <edge source="n2" target="n11">
+      <data key="e_value_per_100kcal">4.24418604651163</data>
+      <data key="e_weight">4.24418604651163</data>
+    </edge>
+    <edge source="n2" target="n12">
+      <data key="e_value_per_100kcal">42.4418604651163</data>
+      <data key="e_weight">42.4418604651163</data>
+    </edge>
+    <edge source="n2" target="n13">
+      <data key="e_value_per_100kcal">0.232558139534884</data>
+      <data key="e_weight">0.232558139534884</data>
+    </edge>
+    <edge source="n2" target="n14">
+      <data key="e_value_per_100kcal">141.860465116279</data>
+      <data key="e_weight">141.860465116279</data>
+    </edge>
+    <edge source="n2" target="n5">
+      <data key="e_value_per_100kcal">0.540697674418605</data>
+      <data key="e_weight">0.540697674418605</data>
+    </edge>
+    <edge source="n2" target="n15">
+      <data key="e_value_per_100kcal">0.465116279069767</data>
+      <data key="e_weight">0.465116279069767</data>
+    </edge>
+    <edge source="n3" target="n4">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n3" target="n4">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n3" target="n6">
+      <data key="e_value_per_100kcal">38.5650224215247</data>
+      <data key="e_weight">38.5650224215247</data>
+    </edge>
+    <edge source="n3" target="n7">
+      <data key="e_value_per_100kcal">0.802690582959641</data>
+      <data key="e_weight">0.802690582959641</data>
+    </edge>
+    <edge source="n3" target="n8">
+      <data key="e_value_per_100kcal">4.93273542600897</data>
+      <data key="e_weight">4.93273542600897</data>
+    </edge>
+    <edge source="n3" target="n9">
+      <data key="e_value_per_100kcal">25.5605381165919</data>
+      <data key="e_weight">25.5605381165919</data>
+    </edge>
+    <edge source="n3" target="n10">
+      <data key="e_value_per_100kcal">0.150224215246637</data>
+      <data key="e_weight">0.150224215246637</data>
+    </edge>
+    <edge source="n3" target="n11">
+      <data key="e_value_per_100kcal">0.0448430493273543</data>
+      <data key="e_weight">0.0448430493273543</data>
+    </edge>
+    <edge source="n3" target="n12">
+      <data key="e_value_per_100kcal">20.1793721973094</data>
+      <data key="e_weight">20.1793721973094</data>
+    </edge>
+    <edge source="n3" target="n13">
+      <data key="e_value_per_100kcal">0.0179372197309417</data>
+      <data key="e_weight">0.0179372197309417</data>
+    </edge>
+    <edge source="n3" target="n14">
+      <data key="e_value_per_100kcal">3.58744394618834</data>
+      <data key="e_weight">3.58744394618834</data>
+    </edge>
+    <edge source="n3" target="n5">
+      <data key="e_value_per_100kcal">0.273542600896861</data>
+      <data key="e_weight">0.273542600896861</data>
+    </edge>
+  </graph>
+</graphml>
