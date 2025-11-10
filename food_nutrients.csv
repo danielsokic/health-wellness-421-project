@@ -1,15 +1,31 @@
-"nutrientName","value","unitName","food"
-"Vitamin C, total ascorbic acid",0,"mg","oats"
-"Iron, Fe",4.5,"mg","oats"
-"Calcium, Ca",0,"mg","oats"
-"Calcium, Ca",100,"mg","eggs"
-"Iron, Fe",0,"mg","eggs"
-"Potassium, K",175,"mg","eggs"
-"Vitamin D (D2 + D3)",0,"µg","eggs"
-"Vitamin C, total ascorbic acid",28.2,"mg","spinach"
-"Iron, Fe",3.18,"mg","spinach"
-"Folate, total",188,"µg","spinach"
-"Calcium, Ca",94,"mg","spinach"
-"Vitamin C, total ascorbic acid",1,"mg","milk"
-"Iron, Fe",0,"mg","milk"
-"Calcium, Ca",127,"mg","milk"
+"nutrientName","value","unitName","food","value_per_100kcal"
+"Energy",884,"kcal","oats",100
+"Energy",3699,"kJ","oats",100
+"Vitamin E (alpha-tocopherol)",14.4,"mg","oats",1.6289592760181
+"Energy",55,"kcal","eggs",100
+"Energy",231,"kJ","eggs",100
+"Energy",172,"kcal","spinach",100
+"Energy",719,"kJ","spinach",100
+"Calcium, Ca",165,"mg","spinach",95.9302325581395
+"Iron, Fe",1.19,"mg","spinach",0.691860465116279
+"Magnesium, Mg",30,"mg","spinach",17.4418604651163
+"Potassium, K",231,"mg","spinach",134.302325581395
+"Zinc, Zn",0.85,"mg","spinach",0.494186046511628
+"Vitamin C, total ascorbic acid",7.3,"mg","spinach",4.24418604651163
+"Folate, total",73,"µg","spinach",42.4418604651163
+"Vitamin B-12",0.4,"µg","spinach",0.232558139534884
+"Vitamin A, RAE",244,"µg","spinach",141.860465116279
+"Vitamin E (alpha-tocopherol)",0.93,"mg","spinach",0.540697674418605
+"Vitamin D (D2 + D3)",0.8,"µg","spinach",0.465116279069767
+"Energy",446,"kcal","milk",100
+"Energy",1865,"kJ","milk",100
+"Calcium, Ca",172,"mg","milk",38.5650224215247
+"Iron, Fe",3.58,"mg","milk",0.802690582959641
+"Magnesium, Mg",22,"mg","milk",4.93273542600897
+"Potassium, K",114,"mg","milk",25.5605381165919
+"Zinc, Zn",0.67,"mg","milk",0.150224215246637
+"Vitamin C, total ascorbic acid",0.2,"mg","milk",0.0448430493273543
+"Folate, total",90,"µg","milk",20.1793721973094
+"Vitamin B-12",0.08,"µg","milk",0.0179372197309417
+"Vitamin A, RAE",16,"µg","milk",3.58744394618834
+"Vitamin E (alpha-tocopherol)",1.22,"mg","milk",0.273542600896861
