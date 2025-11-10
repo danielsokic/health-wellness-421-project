@@ -66,7 +66,8 @@ print(head(food_centrality, 5))
 p1 <- ggraph(g, layout = "bipartite") +
   geom_edge_link(aes(width = weight), alpha = 0.5, color = "gray60") +
   geom_node_point(aes(color = type), size = 5) +
-  geom_node_text(aes(label = name, color = type), repel = TRUE, size = 3, show.legend = FALSE) +
+  geom_node_text(aes(label = name, color = type), repel = TRUE,
+                 size = 3, show.legend = FALSE, max.overlaps = Inf) +
   scale_color_manual(values = c("tomato", "steelblue"),
                      labels = c("Food", "Nutrient")) +
   scale_edge_width_continuous(
@@ -87,7 +88,7 @@ p1 <- ggraph(g, layout = "bipartite") +
 p2 <- ggraph(food_net, layout = "fr") +
   geom_edge_link(aes(width = weight), color = "gray70", alpha = 0.5) +
   geom_node_point(aes(size = degree(food_net)), color = "darkgreen") +
-  geom_node_text(aes(label = name), repel = TRUE, size = 3) +
+  geom_node_text(aes(label = name), repel = TRUE, size = 3, max.overlaps = Inf) +
   scale_edge_width_continuous(
     name = "Shared Nutrients",
     labels = function(x) sprintf("%.0f nutrients in common", x),
@@ -108,6 +109,39 @@ print(p2)
 
 # Export metrics
 write_csv(food_centrality, "food_centrality.csv")
+
+# Degree (foods vs nutrients)
+bip_deg <- degree(g)
+top_deg <- sort(bip_deg, decreasing = TRUE)[1:10]
+cat("Top 10 nodes by degree:\n")
+print(top_deg)
+
+# Betweenness centrality
+bip_bet <- betweenness(g)
+top_bet <- sort(bip_bet, decreasing = TRUE)[1:10]
+cat("\nTop 10 nodes by betweenness:\n")
+print(top_bet)
+
+# Closeness centrality
+bip_close <- closeness(g)
+top_close <- sort(bip_close, decreasing = TRUE)[1:10]
+cat("\nTop 10 nodes by closeness:\n")
+print(top_close)
+
+# Combine metrics for foods only
+bip_metrics <- data.frame(
+  node = names(V(g)),
+  degree = degree(g),
+  betweenness = betweenness(g),
+  closeness = closeness(g)
+)
+
+# Keep only foods (type == FALSE)
+bip_food_metrics <- bip_metrics[V(g)$type == FALSE, ]
+
+# Export bipartite metrics
+write_csv(bip_food_metrics, "bipartite_food_metrics.csv")
+
 write_graph(g, "food_nutrient_network.graphml", format = "graphml")
 
 cat("\n✅ Analysis complete. Files exported.\n")

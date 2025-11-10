@@ -137,8 +137,23 @@ get_food_nutrients_safe <- function(food_name, debug = TRUE) {
   return(nutrients)
 }
 
-# Run for selected foods
-foods <- c("oats", "eggs", "spinach", "milk")
+# Run for selected foods (Covers grains, proteins, fruits, vegetables, and dairy)
+foods <- c(
+  # Breakfast & snacks
+  "oats", "eggs", "milk", "yogurt", "banana", "apple",
+  
+  # Lunch & dinner 
+  "rice, cooked", "pasta, cooked", "bread, whole wheat",
+  "chicken breast, cooked", "tofu, firm", "beans, canned",
+  "broccoli, raw", "carrots, raw", "potatoes, baked",
+  
+  # Protein & affordable dairy
+  "canned tuna in water", "canned salmon", "sardines, canned in water",
+  "cottage cheese, low fat", "mozzarella, part-skim",
+  
+  # Affordable sides & veggies
+  "frozen mixed vegetables", "spinach, raw", "lentils, cooked"
+)
 
 data_list <- lapply(foods, function(f) {
   tryCatch({
