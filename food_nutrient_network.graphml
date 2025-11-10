@@ -18,180 +18,984 @@
       <data key="v_type">false</data>
     </node>
     <node id="n2">
-      <data key="v_name">spinach</data>
-      <data key="v_type">false</data>
-    </node>
-    <node id="n3">
       <data key="v_name">milk</data>
       <data key="v_type">false</data>
     </node>
+    <node id="n3">
+      <data key="v_name">yogurt</data>
+      <data key="v_type">false</data>
+    </node>
     <node id="n4">
+      <data key="v_name">banana</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n5">
+      <data key="v_name">apple</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n6">
+      <data key="v_name">rice, cooked</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n7">
+      <data key="v_name">pasta, cooked</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n8">
+      <data key="v_name">bread, whole wheat</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n9">
+      <data key="v_name">chicken breast, cooked</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n10">
+      <data key="v_name">tofu, firm</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n11">
+      <data key="v_name">beans, canned</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n12">
+      <data key="v_name">broccoli, raw</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n13">
+      <data key="v_name">carrots, raw</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n14">
+      <data key="v_name">potatoes, baked</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n15">
+      <data key="v_name">canned salmon</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n16">
+      <data key="v_name">sardines, canned in water</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n17">
+      <data key="v_name">cottage cheese, low fat</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n18">
+      <data key="v_name">mozzarella, part-skim</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n19">
+      <data key="v_name">frozen mixed vegetables</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n20">
+      <data key="v_name">spinach, raw</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n21">
+      <data key="v_name">lentils, cooked</data>
+      <data key="v_type">false</data>
+    </node>
+    <node id="n22">
       <data key="v_name">Energy</data>
       <data key="v_type">true</data>
     </node>
-    <node id="n5">
+    <node id="n23">
       <data key="v_name">Vitamin E (alpha-tocopherol)</data>
       <data key="v_type">true</data>
     </node>
-    <node id="n6">
+    <node id="n24">
       <data key="v_name">Calcium, Ca</data>
       <data key="v_type">true</data>
     </node>
-    <node id="n7">
+    <node id="n25">
       <data key="v_name">Iron, Fe</data>
       <data key="v_type">true</data>
     </node>
-    <node id="n8">
+    <node id="n26">
       <data key="v_name">Magnesium, Mg</data>
       <data key="v_type">true</data>
     </node>
-    <node id="n9">
+    <node id="n27">
       <data key="v_name">Potassium, K</data>
       <data key="v_type">true</data>
     </node>
-    <node id="n10">
+    <node id="n28">
       <data key="v_name">Zinc, Zn</data>
       <data key="v_type">true</data>
     </node>
-    <node id="n11">
+    <node id="n29">
       <data key="v_name">Vitamin C, total ascorbic acid</data>
       <data key="v_type">true</data>
     </node>
-    <node id="n12">
+    <node id="n30">
       <data key="v_name">Folate, total</data>
       <data key="v_type">true</data>
     </node>
-    <node id="n13">
+    <node id="n31">
       <data key="v_name">Vitamin B-12</data>
       <data key="v_type">true</data>
     </node>
-    <node id="n14">
+    <node id="n32">
       <data key="v_name">Vitamin A, RAE</data>
       <data key="v_type">true</data>
     </node>
-    <node id="n15">
+    <node id="n33">
       <data key="v_name">Vitamin D (D2 + D3)</data>
       <data key="v_type">true</data>
     </node>
-    <edge source="n0" target="n4">
+    <edge source="n0" target="n22">
       <data key="e_value_per_100kcal">100</data>
       <data key="e_weight">100</data>
     </edge>
-    <edge source="n0" target="n4">
+    <edge source="n0" target="n22">
       <data key="e_value_per_100kcal">100</data>
       <data key="e_weight">100</data>
     </edge>
-    <edge source="n0" target="n5">
+    <edge source="n0" target="n23">
       <data key="e_value_per_100kcal">1.6289592760181</data>
       <data key="e_weight">1.6289592760181</data>
     </edge>
-    <edge source="n1" target="n4">
+    <edge source="n1" target="n22">
       <data key="e_value_per_100kcal">100</data>
       <data key="e_weight">100</data>
     </edge>
-    <edge source="n1" target="n4">
+    <edge source="n1" target="n22">
       <data key="e_value_per_100kcal">100</data>
       <data key="e_weight">100</data>
     </edge>
-    <edge source="n2" target="n4">
+    <edge source="n2" target="n22">
       <data key="e_value_per_100kcal">100</data>
       <data key="e_weight">100</data>
     </edge>
-    <edge source="n2" target="n4">
+    <edge source="n2" target="n22">
       <data key="e_value_per_100kcal">100</data>
       <data key="e_weight">100</data>
     </edge>
-    <edge source="n2" target="n6">
-      <data key="e_value_per_100kcal">95.9302325581395</data>
-      <data key="e_weight">95.9302325581395</data>
-    </edge>
-    <edge source="n2" target="n7">
-      <data key="e_value_per_100kcal">0.691860465116279</data>
-      <data key="e_weight">0.691860465116279</data>
-    </edge>
-    <edge source="n2" target="n8">
-      <data key="e_value_per_100kcal">17.4418604651163</data>
-      <data key="e_weight">17.4418604651163</data>
-    </edge>
-    <edge source="n2" target="n9">
-      <data key="e_value_per_100kcal">134.302325581395</data>
-      <data key="e_weight">134.302325581395</data>
-    </edge>
-    <edge source="n2" target="n10">
-      <data key="e_value_per_100kcal">0.494186046511628</data>
-      <data key="e_weight">0.494186046511628</data>
-    </edge>
-    <edge source="n2" target="n11">
-      <data key="e_value_per_100kcal">4.24418604651163</data>
-      <data key="e_weight">4.24418604651163</data>
-    </edge>
-    <edge source="n2" target="n12">
-      <data key="e_value_per_100kcal">42.4418604651163</data>
-      <data key="e_weight">42.4418604651163</data>
-    </edge>
-    <edge source="n2" target="n13">
-      <data key="e_value_per_100kcal">0.232558139534884</data>
-      <data key="e_weight">0.232558139534884</data>
-    </edge>
-    <edge source="n2" target="n14">
-      <data key="e_value_per_100kcal">141.860465116279</data>
-      <data key="e_weight">141.860465116279</data>
-    </edge>
-    <edge source="n2" target="n5">
-      <data key="e_value_per_100kcal">0.540697674418605</data>
-      <data key="e_weight">0.540697674418605</data>
-    </edge>
-    <edge source="n2" target="n15">
-      <data key="e_value_per_100kcal">0.465116279069767</data>
-      <data key="e_weight">0.465116279069767</data>
-    </edge>
-    <edge source="n3" target="n4">
-      <data key="e_value_per_100kcal">100</data>
-      <data key="e_weight">100</data>
-    </edge>
-    <edge source="n3" target="n4">
-      <data key="e_value_per_100kcal">100</data>
-      <data key="e_weight">100</data>
-    </edge>
-    <edge source="n3" target="n6">
+    <edge source="n2" target="n24">
       <data key="e_value_per_100kcal">38.5650224215247</data>
       <data key="e_weight">38.5650224215247</data>
     </edge>
-    <edge source="n3" target="n7">
+    <edge source="n2" target="n25">
       <data key="e_value_per_100kcal">0.802690582959641</data>
       <data key="e_weight">0.802690582959641</data>
     </edge>
-    <edge source="n3" target="n8">
+    <edge source="n2" target="n26">
       <data key="e_value_per_100kcal">4.93273542600897</data>
       <data key="e_weight">4.93273542600897</data>
     </edge>
-    <edge source="n3" target="n9">
+    <edge source="n2" target="n27">
       <data key="e_value_per_100kcal">25.5605381165919</data>
       <data key="e_weight">25.5605381165919</data>
     </edge>
-    <edge source="n3" target="n10">
+    <edge source="n2" target="n28">
       <data key="e_value_per_100kcal">0.150224215246637</data>
       <data key="e_weight">0.150224215246637</data>
     </edge>
-    <edge source="n3" target="n11">
+    <edge source="n2" target="n29">
       <data key="e_value_per_100kcal">0.0448430493273543</data>
       <data key="e_weight">0.0448430493273543</data>
     </edge>
-    <edge source="n3" target="n12">
+    <edge source="n2" target="n30">
       <data key="e_value_per_100kcal">20.1793721973094</data>
       <data key="e_weight">20.1793721973094</data>
     </edge>
-    <edge source="n3" target="n13">
+    <edge source="n2" target="n31">
       <data key="e_value_per_100kcal">0.0179372197309417</data>
       <data key="e_weight">0.0179372197309417</data>
     </edge>
-    <edge source="n3" target="n14">
+    <edge source="n2" target="n32">
       <data key="e_value_per_100kcal">3.58744394618834</data>
       <data key="e_weight">3.58744394618834</data>
     </edge>
-    <edge source="n3" target="n5">
+    <edge source="n2" target="n23">
       <data key="e_value_per_100kcal">0.273542600896861</data>
       <data key="e_weight">0.273542600896861</data>
+    </edge>
+    <edge source="n3" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n3" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n3" target="n24">
+      <data key="e_value_per_100kcal">125.531914893617</data>
+      <data key="e_weight">125.531914893617</data>
+    </edge>
+    <edge source="n3" target="n25">
+      <data key="e_value_per_100kcal">1.12765957446809</data>
+      <data key="e_weight">1.12765957446809</data>
+    </edge>
+    <edge source="n3" target="n26">
+      <data key="e_value_per_100kcal">42.5531914893617</data>
+      <data key="e_weight">42.5531914893617</data>
+    </edge>
+    <edge source="n3" target="n27">
+      <data key="e_value_per_100kcal">50</data>
+      <data key="e_weight">50</data>
+    </edge>
+    <edge source="n3" target="n28">
+      <data key="e_value_per_100kcal">0.329787234042553</data>
+      <data key="e_weight">0.329787234042553</data>
+    </edge>
+    <edge source="n3" target="n29">
+      <data key="e_value_per_100kcal">2.65957446808511</data>
+      <data key="e_weight">2.65957446808511</data>
+    </edge>
+    <edge source="n3" target="n30">
+      <data key="e_value_per_100kcal">6.38297872340426</data>
+      <data key="e_weight">6.38297872340426</data>
+    </edge>
+    <edge source="n3" target="n32">
+      <data key="e_value_per_100kcal">2.12765957446809</data>
+      <data key="e_weight">2.12765957446809</data>
+    </edge>
+    <edge source="n3" target="n23">
+      <data key="e_value_per_100kcal">0.329787234042553</data>
+      <data key="e_weight">0.329787234042553</data>
+    </edge>
+    <edge source="n4" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n4" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n4" target="n24">
+      <data key="e_value_per_100kcal">6.35838150289017</data>
+      <data key="e_weight">6.35838150289017</data>
+    </edge>
+    <edge source="n4" target="n25">
+      <data key="e_value_per_100kcal">0.332369942196532</data>
+      <data key="e_weight">0.332369942196532</data>
+    </edge>
+    <edge source="n4" target="n26">
+      <data key="e_value_per_100kcal">31.2138728323699</data>
+      <data key="e_weight">31.2138728323699</data>
+    </edge>
+    <edge source="n4" target="n27">
+      <data key="e_value_per_100kcal">430.92485549133</data>
+      <data key="e_weight">430.92485549133</data>
+    </edge>
+    <edge source="n4" target="n28">
+      <data key="e_value_per_100kcal">0.176300578034682</data>
+      <data key="e_weight">0.176300578034682</data>
+    </edge>
+    <edge source="n4" target="n29">
+      <data key="e_value_per_100kcal">2.02312138728324</data>
+      <data key="e_weight">2.02312138728324</data>
+    </edge>
+    <edge source="n4" target="n30">
+      <data key="e_value_per_100kcal">4.04624277456647</data>
+      <data key="e_weight">4.04624277456647</data>
+    </edge>
+    <edge source="n4" target="n32">
+      <data key="e_value_per_100kcal">3.46820809248555</data>
+      <data key="e_weight">3.46820809248555</data>
+    </edge>
+    <edge source="n4" target="n23">
+      <data key="e_value_per_100kcal">0.11271676300578</data>
+      <data key="e_weight">0.11271676300578</data>
+    </edge>
+    <edge source="n5" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n5" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n5" target="n24">
+      <data key="e_value_per_100kcal">11.8110236220472</data>
+      <data key="e_weight">11.8110236220472</data>
+    </edge>
+    <edge source="n5" target="n25">
+      <data key="e_value_per_100kcal">0.433070866141732</data>
+      <data key="e_weight">0.433070866141732</data>
+    </edge>
+    <edge source="n5" target="n26">
+      <data key="e_value_per_100kcal">5.11811023622047</data>
+      <data key="e_weight">5.11811023622047</data>
+    </edge>
+    <edge source="n5" target="n27">
+      <data key="e_value_per_100kcal">35.4330708661417</data>
+      <data key="e_weight">35.4330708661417</data>
+    </edge>
+    <edge source="n5" target="n28">
+      <data key="e_value_per_100kcal">0.405511811023622</data>
+      <data key="e_weight">0.405511811023622</data>
+    </edge>
+    <edge source="n5" target="n29">
+      <data key="e_value_per_100kcal">0.196850393700787</data>
+      <data key="e_weight">0.196850393700787</data>
+    </edge>
+    <edge source="n5" target="n30">
+      <data key="e_value_per_100kcal">22.4409448818898</data>
+      <data key="e_weight">22.4409448818898</data>
+    </edge>
+    <edge source="n5" target="n31">
+      <data key="e_value_per_100kcal">0.078740157480315</data>
+      <data key="e_weight">0.078740157480315</data>
+    </edge>
+    <edge source="n5" target="n32">
+      <data key="e_value_per_100kcal">37.007874015748</data>
+      <data key="e_weight">37.007874015748</data>
+    </edge>
+    <edge source="n6" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n6" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n6" target="n24">
+      <data key="e_value_per_100kcal">3.7037037037037</data>
+      <data key="e_weight">3.7037037037037</data>
+    </edge>
+    <edge source="n6" target="n25">
+      <data key="e_value_per_100kcal">0.12962962962963</data>
+      <data key="e_weight">0.12962962962963</data>
+    </edge>
+    <edge source="n6" target="n26">
+      <data key="e_value_per_100kcal">2.77777777777778</data>
+      <data key="e_weight">2.77777777777778</data>
+    </edge>
+    <edge source="n6" target="n27">
+      <data key="e_value_per_100kcal">3.7037037037037</data>
+      <data key="e_weight">3.7037037037037</data>
+    </edge>
+    <edge source="n6" target="n28">
+      <data key="e_value_per_100kcal">0.231481481481481</data>
+      <data key="e_weight">0.231481481481481</data>
+    </edge>
+    <edge source="n6" target="n30">
+      <data key="e_value_per_100kcal">0.925925925925926</data>
+      <data key="e_weight">0.925925925925926</data>
+    </edge>
+    <edge source="n6" target="n23">
+      <data key="e_value_per_100kcal">0.0277777777777778</data>
+      <data key="e_weight">0.0277777777777778</data>
+    </edge>
+    <edge source="n7" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n7" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n7" target="n24">
+      <data key="e_value_per_100kcal">4.45859872611465</data>
+      <data key="e_weight">4.45859872611465</data>
+    </edge>
+    <edge source="n7" target="n25">
+      <data key="e_value_per_100kcal">0.815286624203822</data>
+      <data key="e_weight">0.815286624203822</data>
+    </edge>
+    <edge source="n7" target="n26">
+      <data key="e_value_per_100kcal">11.4649681528662</data>
+      <data key="e_weight">11.4649681528662</data>
+    </edge>
+    <edge source="n7" target="n27">
+      <data key="e_value_per_100kcal">28.0254777070064</data>
+      <data key="e_weight">28.0254777070064</data>
+    </edge>
+    <edge source="n7" target="n28">
+      <data key="e_value_per_100kcal">0.32484076433121</data>
+      <data key="e_weight">0.32484076433121</data>
+    </edge>
+    <edge source="n7" target="n30">
+      <data key="e_value_per_100kcal">46.4968152866242</data>
+      <data key="e_weight">46.4968152866242</data>
+    </edge>
+    <edge source="n7" target="n23">
+      <data key="e_value_per_100kcal">0.0382165605095541</data>
+      <data key="e_weight">0.0382165605095541</data>
+    </edge>
+    <edge source="n8" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n8" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n8" target="n24">
+      <data key="e_value_per_100kcal">5.72519083969466</data>
+      <data key="e_weight">5.72519083969466</data>
+    </edge>
+    <edge source="n8" target="n25">
+      <data key="e_value_per_100kcal">1.16793893129771</data>
+      <data key="e_weight">1.16793893129771</data>
+    </edge>
+    <edge source="n8" target="n26">
+      <data key="e_value_per_100kcal">26.3358778625954</data>
+      <data key="e_weight">26.3358778625954</data>
+    </edge>
+    <edge source="n8" target="n27">
+      <data key="e_value_per_100kcal">64.8854961832061</data>
+      <data key="e_weight">64.8854961832061</data>
+    </edge>
+    <edge source="n8" target="n28">
+      <data key="e_value_per_100kcal">0.580152671755725</data>
+      <data key="e_weight">0.580152671755725</data>
+    </edge>
+    <edge source="n8" target="n30">
+      <data key="e_value_per_100kcal">13.3587786259542</data>
+      <data key="e_weight">13.3587786259542</data>
+    </edge>
+    <edge source="n8" target="n23">
+      <data key="e_value_per_100kcal">0.232824427480916</data>
+      <data key="e_weight">0.232824427480916</data>
+    </edge>
+    <edge source="n9" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n9" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n9" target="n24">
+      <data key="e_value_per_100kcal">5.55555555555556</data>
+      <data key="e_weight">5.55555555555556</data>
+    </edge>
+    <edge source="n9" target="n25">
+      <data key="e_value_per_100kcal">0.396825396825397</data>
+      <data key="e_weight">0.396825396825397</data>
+    </edge>
+    <edge source="n9" target="n26">
+      <data key="e_value_per_100kcal">10.3174603174603</data>
+      <data key="e_weight">10.3174603174603</data>
+    </edge>
+    <edge source="n9" target="n27">
+      <data key="e_value_per_100kcal">89.2857142857143</data>
+      <data key="e_weight">89.2857142857143</data>
+    </edge>
+    <edge source="n9" target="n28">
+      <data key="e_value_per_100kcal">0.305555555555556</data>
+      <data key="e_weight">0.305555555555556</data>
+    </edge>
+    <edge source="n9" target="n30">
+      <data key="e_value_per_100kcal">4.76190476190476</data>
+      <data key="e_weight">4.76190476190476</data>
+    </edge>
+    <edge source="n9" target="n31">
+      <data key="e_value_per_100kcal">0.174603174603175</data>
+      <data key="e_weight">0.174603174603175</data>
+    </edge>
+    <edge source="n9" target="n23">
+      <data key="e_value_per_100kcal">0.146825396825397</data>
+      <data key="e_weight">0.146825396825397</data>
+    </edge>
+    <edge source="n10" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n10" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n10" target="n24">
+      <data key="e_value_per_100kcal">175.294117647059</data>
+      <data key="e_weight">175.294117647059</data>
+    </edge>
+    <edge source="n10" target="n25">
+      <data key="e_value_per_100kcal">1.98823529411765</data>
+      <data key="e_weight">1.98823529411765</data>
+    </edge>
+    <edge source="n10" target="n29">
+      <data key="e_value_per_100kcal">1.29411764705882</data>
+      <data key="e_weight">1.29411764705882</data>
+    </edge>
+    <edge source="n11" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n11" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n11" target="n24">
+      <data key="e_value_per_100kcal">45.631067961165</data>
+      <data key="e_weight">45.631067961165</data>
+    </edge>
+    <edge source="n11" target="n25">
+      <data key="e_value_per_100kcal">3.33009708737864</data>
+      <data key="e_weight">3.33009708737864</data>
+    </edge>
+    <edge source="n11" target="n26">
+      <data key="e_value_per_100kcal">43.6893203883495</data>
+      <data key="e_weight">43.6893203883495</data>
+    </edge>
+    <edge source="n11" target="n27">
+      <data key="e_value_per_100kcal">354.368932038835</data>
+      <data key="e_weight">354.368932038835</data>
+    </edge>
+    <edge source="n11" target="n28">
+      <data key="e_value_per_100kcal">1.94174757281553</data>
+      <data key="e_weight">1.94174757281553</data>
+    </edge>
+    <edge source="n11" target="n29">
+      <data key="e_value_per_100kcal">1.6504854368932</data>
+      <data key="e_weight">1.6504854368932</data>
+    </edge>
+    <edge source="n11" target="n30">
+      <data key="e_value_per_100kcal">22.3300970873786</data>
+      <data key="e_weight">22.3300970873786</data>
+    </edge>
+    <edge source="n11" target="n32">
+      <data key="e_value_per_100kcal">16.504854368932</data>
+      <data key="e_weight">16.504854368932</data>
+    </edge>
+    <edge source="n11" target="n23">
+      <data key="e_value_per_100kcal">0.504854368932039</data>
+      <data key="e_weight">0.504854368932039</data>
+    </edge>
+    <edge source="n12" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n12" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n12" target="n24">
+      <data key="e_value_per_100kcal">148.387096774194</data>
+      <data key="e_weight">148.387096774194</data>
+    </edge>
+    <edge source="n12" target="n25">
+      <data key="e_value_per_100kcal">2.2258064516129</data>
+      <data key="e_weight">2.2258064516129</data>
+    </edge>
+    <edge source="n12" target="n26">
+      <data key="e_value_per_100kcal">67.741935483871</data>
+      <data key="e_weight">67.741935483871</data>
+    </edge>
+    <edge source="n12" target="n27">
+      <data key="e_value_per_100kcal">977.41935483871</data>
+      <data key="e_weight">977.41935483871</data>
+    </edge>
+    <edge source="n12" target="n28">
+      <data key="e_value_per_100kcal">1.35483870967742</data>
+      <data key="e_weight">1.35483870967742</data>
+    </edge>
+    <edge source="n12" target="n29">
+      <data key="e_value_per_100kcal">294.516129032258</data>
+      <data key="e_weight">294.516129032258</data>
+    </edge>
+    <edge source="n12" target="n30">
+      <data key="e_value_per_100kcal">209.677419354839</data>
+      <data key="e_weight">209.677419354839</data>
+    </edge>
+    <edge source="n12" target="n32">
+      <data key="e_value_per_100kcal">25.8064516129032</data>
+      <data key="e_weight">25.8064516129032</data>
+    </edge>
+    <edge source="n12" target="n23">
+      <data key="e_value_per_100kcal">0.483870967741935</data>
+      <data key="e_weight">0.483870967741935</data>
+    </edge>
+    <edge source="n13" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n13" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n13" target="n24">
+      <data key="e_value_per_100kcal">80.4878048780488</data>
+      <data key="e_weight">80.4878048780488</data>
+    </edge>
+    <edge source="n13" target="n25">
+      <data key="e_value_per_100kcal">0.731707317073171</data>
+      <data key="e_weight">0.731707317073171</data>
+    </edge>
+    <edge source="n13" target="n26">
+      <data key="e_value_per_100kcal">29.2682926829268</data>
+      <data key="e_weight">29.2682926829268</data>
+    </edge>
+    <edge source="n13" target="n27">
+      <data key="e_value_per_100kcal">780.487804878049</data>
+      <data key="e_weight">780.487804878049</data>
+    </edge>
+    <edge source="n13" target="n28">
+      <data key="e_value_per_100kcal">0.585365853658537</data>
+      <data key="e_weight">0.585365853658537</data>
+    </edge>
+    <edge source="n13" target="n29">
+      <data key="e_value_per_100kcal">14.390243902439</data>
+      <data key="e_weight">14.390243902439</data>
+    </edge>
+    <edge source="n13" target="n30">
+      <data key="e_value_per_100kcal">46.3414634146341</data>
+      <data key="e_weight">46.3414634146341</data>
+    </edge>
+    <edge source="n13" target="n32">
+      <data key="e_value_per_100kcal">2036.58536585366</data>
+      <data key="e_weight">2036.58536585366</data>
+    </edge>
+    <edge source="n13" target="n23">
+      <data key="e_value_per_100kcal">1.60975609756098</data>
+      <data key="e_weight">1.60975609756098</data>
+    </edge>
+    <edge source="n14" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n14" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n14" target="n24">
+      <data key="e_value_per_100kcal">5.3763440860215</data>
+      <data key="e_weight">5.3763440860215</data>
+    </edge>
+    <edge source="n14" target="n25">
+      <data key="e_value_per_100kcal">0.376344086021505</data>
+      <data key="e_weight">0.376344086021505</data>
+    </edge>
+    <edge source="n14" target="n26">
+      <data key="e_value_per_100kcal">26.8817204301075</data>
+      <data key="e_weight">26.8817204301075</data>
+    </edge>
+    <edge source="n14" target="n27">
+      <data key="e_value_per_100kcal">420.430107526882</data>
+      <data key="e_weight">420.430107526882</data>
+    </edge>
+    <edge source="n14" target="n28">
+      <data key="e_value_per_100kcal">0.311827956989247</data>
+      <data key="e_weight">0.311827956989247</data>
+    </edge>
+    <edge source="n14" target="n29">
+      <data key="e_value_per_100kcal">13.7634408602151</data>
+      <data key="e_weight">13.7634408602151</data>
+    </edge>
+    <edge source="n14" target="n30">
+      <data key="e_value_per_100kcal">9.67741935483871</data>
+      <data key="e_weight">9.67741935483871</data>
+    </edge>
+    <edge source="n14" target="n23">
+      <data key="e_value_per_100kcal">0.043010752688172</data>
+      <data key="e_weight">0.043010752688172</data>
+    </edge>
+    <edge source="n15" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n15" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n15" target="n24">
+      <data key="e_value_per_100kcal">129.411764705882</data>
+      <data key="e_weight">129.411764705882</data>
+    </edge>
+    <edge source="n15" target="n25">
+      <data key="e_value_per_100kcal">0.372549019607843</data>
+      <data key="e_weight">0.372549019607843</data>
+    </edge>
+    <edge source="n15" target="n26">
+      <data key="e_value_per_100kcal">19.6078431372549</data>
+      <data key="e_weight">19.6078431372549</data>
+    </edge>
+    <edge source="n15" target="n27">
+      <data key="e_value_per_100kcal">215.032679738562</data>
+      <data key="e_weight">215.032679738562</data>
+    </edge>
+    <edge source="n15" target="n28">
+      <data key="e_value_per_100kcal">0.437908496732026</data>
+      <data key="e_weight">0.437908496732026</data>
+    </edge>
+    <edge source="n15" target="n31">
+      <data key="e_value_per_100kcal">0.261437908496732</data>
+      <data key="e_weight">0.261437908496732</data>
+    </edge>
+    <edge source="n15" target="n32">
+      <data key="e_value_per_100kcal">25.4901960784314</data>
+      <data key="e_weight">25.4901960784314</data>
+    </edge>
+    <edge source="n15" target="n23">
+      <data key="e_value_per_100kcal">1.22875816993464</data>
+      <data key="e_weight">1.22875816993464</data>
+    </edge>
+    <edge source="n15" target="n33">
+      <data key="e_value_per_100kcal">12.4183006535948</data>
+      <data key="e_weight">12.4183006535948</data>
+    </edge>
+    <edge source="n16" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n16" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n16" target="n24">
+      <data key="e_value_per_100kcal">183.653846153846</data>
+      <data key="e_weight">183.653846153846</data>
+    </edge>
+    <edge source="n16" target="n25">
+      <data key="e_value_per_100kcal">1.40384615384615</data>
+      <data key="e_weight">1.40384615384615</data>
+    </edge>
+    <edge source="n16" target="n26">
+      <data key="e_value_per_100kcal">18.75</data>
+      <data key="e_weight">18.75</data>
+    </edge>
+    <edge source="n16" target="n27">
+      <data key="e_value_per_100kcal">190.865384615385</data>
+      <data key="e_weight">190.865384615385</data>
+    </edge>
+    <edge source="n16" target="n28">
+      <data key="e_value_per_100kcal">0.629807692307692</data>
+      <data key="e_weight">0.629807692307692</data>
+    </edge>
+    <edge source="n16" target="n30">
+      <data key="e_value_per_100kcal">4.80769230769231</data>
+      <data key="e_weight">4.80769230769231</data>
+    </edge>
+    <edge source="n16" target="n31">
+      <data key="e_value_per_100kcal">4.29807692307692</data>
+      <data key="e_weight">4.29807692307692</data>
+    </edge>
+    <edge source="n16" target="n32">
+      <data key="e_value_per_100kcal">15.3846153846154</data>
+      <data key="e_weight">15.3846153846154</data>
+    </edge>
+    <edge source="n16" target="n23">
+      <data key="e_value_per_100kcal">0.980769230769231</data>
+      <data key="e_weight">0.980769230769231</data>
+    </edge>
+    <edge source="n16" target="n33">
+      <data key="e_value_per_100kcal">2.30769230769231</data>
+      <data key="e_weight">2.30769230769231</data>
+    </edge>
+    <edge source="n17" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n17" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n17" target="n24">
+      <data key="e_value_per_100kcal">71.1538461538462</data>
+      <data key="e_weight">71.1538461538462</data>
+    </edge>
+    <edge source="n17" target="n25">
+      <data key="e_value_per_100kcal">0.0817307692307692</data>
+      <data key="e_weight">0.0817307692307692</data>
+    </edge>
+    <edge source="n17" target="n26">
+      <data key="e_value_per_100kcal">3.84615384615385</data>
+      <data key="e_weight">3.84615384615385</data>
+    </edge>
+    <edge source="n17" target="n27">
+      <data key="e_value_per_100kcal">118.75</data>
+      <data key="e_weight">118.75</data>
+    </edge>
+    <edge source="n17" target="n28">
+      <data key="e_value_per_100kcal">0.274038461538462</data>
+      <data key="e_weight">0.274038461538462</data>
+    </edge>
+    <edge source="n17" target="n30">
+      <data key="e_value_per_100kcal">9.13461538461538</data>
+      <data key="e_weight">9.13461538461538</data>
+    </edge>
+    <edge source="n17" target="n31">
+      <data key="e_value_per_100kcal">0.442307692307692</data>
+      <data key="e_weight">0.442307692307692</data>
+    </edge>
+    <edge source="n17" target="n32">
+      <data key="e_value_per_100kcal">77.4038461538462</data>
+      <data key="e_weight">77.4038461538462</data>
+    </edge>
+    <edge source="n17" target="n23">
+      <data key="e_value_per_100kcal">0.129807692307692</data>
+      <data key="e_weight">0.129807692307692</data>
+    </edge>
+    <edge source="n17" target="n33">
+      <data key="e_value_per_100kcal">0.144230769230769</data>
+      <data key="e_weight">0.144230769230769</data>
+    </edge>
+    <edge source="n18" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n18" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n18" target="n24">
+      <data key="e_value_per_100kcal">307.874015748031</data>
+      <data key="e_weight">307.874015748031</data>
+    </edge>
+    <edge source="n18" target="n25">
+      <data key="e_value_per_100kcal">0.0866141732283465</data>
+      <data key="e_weight">0.0866141732283465</data>
+    </edge>
+    <edge source="n18" target="n26">
+      <data key="e_value_per_100kcal">9.05511811023622</data>
+      <data key="e_weight">9.05511811023622</data>
+    </edge>
+    <edge source="n18" target="n27">
+      <data key="e_value_per_100kcal">33.0708661417323</data>
+      <data key="e_weight">33.0708661417323</data>
+    </edge>
+    <edge source="n18" target="n28">
+      <data key="e_value_per_100kcal">1.08661417322835</data>
+      <data key="e_weight">1.08661417322835</data>
+    </edge>
+    <edge source="n18" target="n30">
+      <data key="e_value_per_100kcal">3.54330708661417</data>
+      <data key="e_weight">3.54330708661417</data>
+    </edge>
+    <edge source="n18" target="n31">
+      <data key="e_value_per_100kcal">0.322834645669291</data>
+      <data key="e_weight">0.322834645669291</data>
+    </edge>
+    <edge source="n18" target="n32">
+      <data key="e_value_per_100kcal">50</data>
+      <data key="e_weight">50</data>
+    </edge>
+    <edge source="n18" target="n23">
+      <data key="e_value_per_100kcal">0.0551181102362205</data>
+      <data key="e_weight">0.0551181102362205</data>
+    </edge>
+    <edge source="n18" target="n33">
+      <data key="e_value_per_100kcal">0.118110236220472</data>
+      <data key="e_weight">0.118110236220472</data>
+    </edge>
+    <edge source="n19" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n19" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n19" target="n24">
+      <data key="e_value_per_100kcal">34.7222222222222</data>
+      <data key="e_weight">34.7222222222222</data>
+    </edge>
+    <edge source="n19" target="n25">
+      <data key="e_value_per_100kcal">1.31944444444444</data>
+      <data key="e_weight">1.31944444444444</data>
+    </edge>
+    <edge source="n19" target="n26">
+      <data key="e_value_per_100kcal">33.3333333333333</data>
+      <data key="e_weight">33.3333333333333</data>
+    </edge>
+    <edge source="n19" target="n27">
+      <data key="e_value_per_100kcal">294.444444444444</data>
+      <data key="e_weight">294.444444444444</data>
+    </edge>
+    <edge source="n19" target="n28">
+      <data key="e_value_per_100kcal">0.625</data>
+      <data key="e_weight">0.625</data>
+    </edge>
+    <edge source="n19" target="n29">
+      <data key="e_value_per_100kcal">14.4444444444444</data>
+      <data key="e_weight">14.4444444444444</data>
+    </edge>
+    <edge source="n19" target="n30">
+      <data key="e_value_per_100kcal">40.2777777777778</data>
+      <data key="e_weight">40.2777777777778</data>
+    </edge>
+    <edge source="n19" target="n32">
+      <data key="e_value_per_100kcal">352.777777777778</data>
+      <data key="e_weight">352.777777777778</data>
+    </edge>
+    <edge source="n20" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n20" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n20" target="n24">
+      <data key="e_value_per_100kcal">430.434782608696</data>
+      <data key="e_weight">430.434782608696</data>
+    </edge>
+    <edge source="n20" target="n25">
+      <data key="e_value_per_100kcal">11.7826086956522</data>
+      <data key="e_weight">11.7826086956522</data>
+    </edge>
+    <edge source="n20" target="n26">
+      <data key="e_value_per_100kcal">343.478260869565</data>
+      <data key="e_weight">343.478260869565</data>
+    </edge>
+    <edge source="n20" target="n27">
+      <data key="e_value_per_100kcal">2426.08695652174</data>
+      <data key="e_weight">2426.08695652174</data>
+    </edge>
+    <edge source="n20" target="n28">
+      <data key="e_value_per_100kcal">2.30434782608696</data>
+      <data key="e_weight">2.30434782608696</data>
+    </edge>
+    <edge source="n20" target="n29">
+      <data key="e_value_per_100kcal">122.173913043478</data>
+      <data key="e_weight">122.173913043478</data>
+    </edge>
+    <edge source="n20" target="n30">
+      <data key="e_value_per_100kcal">843.478260869565</data>
+      <data key="e_weight">843.478260869565</data>
+    </edge>
+    <edge source="n20" target="n32">
+      <data key="e_value_per_100kcal">2039.13043478261</data>
+      <data key="e_weight">2039.13043478261</data>
+    </edge>
+    <edge source="n20" target="n23">
+      <data key="e_value_per_100kcal">8.82608695652174</data>
+      <data key="e_weight">8.82608695652174</data>
+    </edge>
+    <edge source="n21" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n21" target="n22">
+      <data key="e_value_per_100kcal">100</data>
+      <data key="e_weight">100</data>
+    </edge>
+    <edge source="n21" target="n24">
+      <data key="e_value_per_100kcal">16.6666666666667</data>
+      <data key="e_weight">16.6666666666667</data>
+    </edge>
+    <edge source="n21" target="n25">
+      <data key="e_value_per_100kcal">2.92105263157895</data>
+      <data key="e_weight">2.92105263157895</data>
+    </edge>
+    <edge source="n21" target="n26">
+      <data key="e_value_per_100kcal">31.578947368421</data>
+      <data key="e_weight">31.578947368421</data>
+    </edge>
+    <edge source="n21" target="n27">
+      <data key="e_value_per_100kcal">323.684210526316</data>
+      <data key="e_weight">323.684210526316</data>
+    </edge>
+    <edge source="n21" target="n28">
+      <data key="e_value_per_100kcal">1.1140350877193</data>
+      <data key="e_weight">1.1140350877193</data>
+    </edge>
+    <edge source="n21" target="n29">
+      <data key="e_value_per_100kcal">1.31578947368421</data>
+      <data key="e_weight">1.31578947368421</data>
+    </edge>
+    <edge source="n21" target="n30">
+      <data key="e_value_per_100kcal">158.771929824561</data>
+      <data key="e_weight">158.771929824561</data>
+    </edge>
+    <edge source="n21" target="n23">
+      <data key="e_value_per_100kcal">0.0964912280701754</data>
+      <data key="e_weight">0.0964912280701754</data>
     </edge>
   </graph>
 </graphml>
