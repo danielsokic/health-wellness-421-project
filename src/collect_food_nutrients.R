@@ -1,23 +1,15 @@
-# ======================================================
 # collect_food_nutrients.R
-# Collect nutrient data for selected foods from USDA API
-# Normalized per 100 kcal
-# ======================================================
 
 library(httr)
 library(jsonlite)
 library(dplyr)
 library(purrr)
 
-# ---------------------------------------------
-# Setup
-# ---------------------------------------------
+# Setup--
 api_key <- Sys.getenv("FDC_API_KEY")  # safer: set via Sys.setenv(FDC_API_KEY="yourkey")
 if (api_key == "") api_key <- "MvBTNqqBAgVlqcDRQEf4VNw0eclyMxMAZ8U1nuyZ"  # fallback for testing
 
-# ---------------------------------------------
 # Helper function: safely extract nutrients
-# ---------------------------------------------
 get_food_nutrients_safe <- function(food_name, debug = TRUE) {
   message("\nFetching data for: ", food_name)
   
@@ -34,7 +26,7 @@ get_food_nutrients_safe <- function(food_name, debug = TRUE) {
   
   # Retry with broader data types if not found
   if (is.null(search_data$foods) || nrow(search_data$foods) == 0) {
-    message("🔄 Retrying with all data types for ", food_name)
+    message("Retrying with all data types for ", food_name)
     search_url <- paste0(
       "https://api.nal.usda.gov/fdc/v1/foods/search?query=",
       URLencode(food_name),
@@ -46,37 +38,37 @@ get_food_nutrients_safe <- function(food_name, debug = TRUE) {
   }
   
   if (is.null(search_data$foods) || nrow(search_data$foods) == 0) {
-    message("⚠️ No foods found for ", food_name)
+    message("No foods found for ", food_name)
     return(NULL)
   }
   
   fdc_id <- search_data$foods$fdcId[1]
   data_type <- search_data$foods$dataType[1]
-  message("✅ Found match for ", food_name, " (FDC ID: ", fdc_id, ", DataType: ", data_type, ")")
+  message("ound match for ", food_name, " (FDC ID: ", fdc_id, ", DataType: ", data_type, ")")
   
   # 2. Detail endpoint
   food_url <- paste0("https://api.nal.usda.gov/fdc/v1/food/", fdc_id, "?api_key=", api_key)
   food_res <- GET(food_url)
   
   if (status_code(food_res) == 404) {
-    message("⚠️ Skipping ", food_name, " (404 detail missing)")
+    message("Skipping ", food_name, " (404 detail missing)")
     return(NULL)
   }
   if (status_code(food_res) != 200) {
-    message("❌ Failed to get details for ", food_name, " (status ", status_code(food_res), ")")
+    message("iled to get details for ", food_name, " (status ", status_code(food_res), ")")
     return(NULL)
   }
   
   food_data <- tryCatch(
     fromJSON(content(food_res, "text", encoding = "UTF-8"), simplifyVector = FALSE),
     error = function(e) {
-      message("⚠️ JSON parse error in food details for ", food_name, ": ", e$message)
+      message("JSON parse error in food details for ", food_name, ": ", e$message)
       return(NULL)
     }
   )
   
   if (is.null(food_data$foodNutrients)) {
-    message("⚠️ No nutrient info found for ", food_name)
+    message("No nutrient info found for ", food_name)
     return(NULL)
   }
   
@@ -134,7 +126,7 @@ get_food_nutrients_safe <- function(food_name, debug = TRUE) {
           ))
       }
     } else {
-      message("⚠️ Skipping normalization for ", food_name, " (no kcal entry)")
+      message("Skipping normalization for ", food_name, " (no kcal entry)")
       nutrients$value_per_100kcal <- NA
     }
   } else {
@@ -145,9 +137,7 @@ get_food_nutrients_safe <- function(food_name, debug = TRUE) {
   return(nutrients)
 }
 
-# ---------------------------------------------
 # Run for selected foods
-# ---------------------------------------------
 foods <- c("oats", "eggs", "spinach", "milk")
 
 data_list <- lapply(foods, function(f) {
@@ -163,9 +153,7 @@ data_list <- lapply(foods, function(f) {
 nutrient_data <- bind_rows(data_list)
 print(nutrient_data)
 
-# ---------------------------------------------
 # Save to CSV
-# ---------------------------------------------
 output_file <- "food_nutrients.csv"
 write.csv(nutrient_data, output_file, row.names = FALSE)
-message("✅ CSV file saved as: ", output_file)
+message("CSV file saved as: ", output_file)

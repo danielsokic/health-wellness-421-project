@@ -1,18 +1,11 @@
-# ======================================================
 # build_network.R
-# Builds a bipartite Food–Nutrient network from collected data
-# Uses normalized values (per 100 kcal)
-# ======================================================
-
 library(igraph)
 library(readr)
 library(dplyr)
 library(ggraph)
 library(ggplot2)
 
-# ---------------------------------------------
 # Load and filter data
-# ---------------------------------------------
 nutrient_data <- read_csv("food_nutrients.csv")
 
 # Filter out missing or zero nutrient values
@@ -20,18 +13,14 @@ nutrient_data <- read_csv("food_nutrients.csv")
 nutrient_data <- nutrient_data %>%
   filter(!is.na(value_per_100kcal), value_per_100kcal > 0)
 
-cat("✅ Filtered nutrient data loaded.\n")
+cat("Filtered nutrient data loaded.\n")
 cat("Rows remaining:", nrow(nutrient_data), "\n")
 
-# ---------------------------------------------
 # Build edge list
-# ---------------------------------------------
 edges <- nutrient_data %>%
   select(food, nutrientName, value_per_100kcal)
 
-# ---------------------------------------------
 # Build bipartite graph
-# ---------------------------------------------
 g <- graph_from_data_frame(edges, directed = FALSE)
 
 # Bipartite types: TRUE = Nutrient, FALSE = Food
@@ -46,16 +35,12 @@ cat("Number of nodes:", vcount(g), "\n")
 cat("Number of edges:", ecount(g), "\n")
 cat("Is bipartite:", is_bipartite(g), "\n")
 
-# ---------------------------------------------
 # Degree analysis
-# ---------------------------------------------
 deg <- degree(g)
 cat("\nNode degree summary:\n")
 print(summary(deg))
 
-# ---------------------------------------------
 # Bipartite projections
-# ---------------------------------------------
 proj <- bipartite_projection(g)
 food_net <- proj$proj1
 nutrient_net <- proj$proj2
@@ -63,9 +48,7 @@ nutrient_net <- proj$proj2
 V(food_net)$label <- V(food_net)$name
 V(nutrient_net)$label <- V(nutrient_net)$name
 
-# ---------------------------------------------
 # Centrality metrics for foods
-# ---------------------------------------------
 food_centrality <- data.frame(
   food = V(food_net)$name,
   degree = degree(food_net),
@@ -77,9 +60,7 @@ food_centrality <- data.frame(
 cat("\nTop 5 foods by degree (shared nutrients):\n")
 print(head(food_centrality, 5))
 
-# ---------------------------------------------
 # Visualizations
-# ---------------------------------------------
 
 # (A) Food–Nutrient Bipartite Network
 p1 <- ggraph(g, layout = "bipartite") +
@@ -121,15 +102,11 @@ p2 <- ggraph(food_net, layout = "fr") +
     legend.text = element_text(size = 9)
   )
 
-# ---------------------------------------------
 # Display plots
-# ---------------------------------------------
 print(p1)
 print(p2)
 
-# ---------------------------------------------
 # Export metrics
-# ---------------------------------------------
 write_csv(food_centrality, "food_centrality.csv")
 write_graph(g, "food_nutrient_network.graphml", format = "graphml")
 
