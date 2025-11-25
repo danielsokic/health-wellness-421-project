@@ -32,7 +32,7 @@
 "Calcium, Ca",22,"mg","banana",6.35838150289017
 "Iron, Fe",1.15,"mg","banana",0.332369942196532
 "Magnesium, Mg",108,"mg","banana",31.2138728323699
-"Potassium, K",1491,"mg","banana",430.92485549133
+"Potassium, K",1491,"mg","banana",430.924855491329
 "Zinc, Zn",0.61,"mg","banana",0.176300578034682
 "Vitamin C, total ascorbic acid",7,"mg","banana",2.02312138728324
 "Folate, total",14,"µg","banana",4.04624277456647
@@ -93,7 +93,7 @@
 "Vitamin C, total ascorbic acid",1.1,"mg","tofu, firm",1.29411764705882
 "Energy",103,"kcal","beans, canned",100
 "Energy",433,"kJ","beans, canned",100
-"Calcium, Ca",47,"mg","beans, canned",45.631067961165
+"Calcium, Ca",47,"mg","beans, canned",45.6310679611651
 "Iron, Fe",3.43,"mg","beans, canned",3.33009708737864
 "Magnesium, Mg",45,"mg","beans, canned",43.6893203883495
 "Potassium, K",365,"mg","beans, canned",354.368932038835
@@ -126,7 +126,7 @@
 "Vitamin E (alpha-tocopherol)",0.66,"mg","carrots, raw",1.60975609756098
 "Energy",93,"kcal","potatoes, baked",100
 "Energy",390,"kJ","potatoes, baked",100
-"Calcium, Ca",5,"mg","potatoes, baked",5.3763440860215
+"Calcium, Ca",5,"mg","potatoes, baked",5.37634408602151
 "Iron, Fe",0.35,"mg","potatoes, baked",0.376344086021505
 "Magnesium, Mg",25,"mg","potatoes, baked",26.8817204301075
 "Potassium, K",391,"mg","potatoes, baked",420.430107526882
@@ -206,7 +206,7 @@
 "Energy",477,"kJ","lentils, cooked",100
 "Calcium, Ca",19,"mg","lentils, cooked",16.6666666666667
 "Iron, Fe",3.33,"mg","lentils, cooked",2.92105263157895
-"Magnesium, Mg",36,"mg","lentils, cooked",31.578947368421
+"Magnesium, Mg",36,"mg","lentils, cooked",31.5789473684211
 "Potassium, K",369,"mg","lentils, cooked",323.684210526316
 "Zinc, Zn",1.27,"mg","lentils, cooked",1.1140350877193
 "Vitamin C, total ascorbic acid",1.5,"mg","lentils, cooked",1.31578947368421

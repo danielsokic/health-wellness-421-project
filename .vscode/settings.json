@@ -1,0 +1,5 @@
+{
+  "r.rterm.windows": "C:\\Program Files\\R\\R-4.3.2\\bin\\x64\\Rterm.exe",
+  "r.rpath.windows": "C:\\Program Files\\R\\R-4.3.2\\bin\\R.exe",
+  "r.lsp.path": "C:\\Program Files\\R\\R-4.3.2\\bin\\Rscript.exe"
+}
