@@ -62,22 +62,45 @@ print(head(food_centrality, 5))
 
 # Visualizations
 
-# (A) Food–Nutrient Bipartite Network
 p1 <- ggraph(g, layout = "bipartite") +
-  geom_edge_link(aes(width = weight), alpha = 0.5, color = "gray60") +
+  geom_edge_link(
+    aes(
+      edge_color = weight,       
+      edge_width = weight        
+    ),
+    alpha = 0.8
+  ) +
+  
   geom_node_point(aes(color = type), size = 5) +
-  geom_node_text(aes(label = name, color = type), repel = TRUE,
-                 size = 3, show.legend = FALSE, max.overlaps = Inf) +
-  scale_color_manual(values = c("tomato", "steelblue"),
-                     labels = c("Food", "Nutrient")) +
-  scale_edge_width_continuous(
-    name = "Nutrient Density",
-    labels = function(x) sprintf("%.1f mg per 100 kcal", x),
-    range = c(0.2, 2.5)
+  geom_node_text(
+    aes(label = name, color = type),
+    repel = TRUE,
+    size = 3,
+    show.legend = FALSE
+  ) +
+  scale_color_manual(
+    values = c("tomato", "steelblue"),
+    labels = c("Food", "Nutrient"),
+    name = "Node Type"
+  ) +
+  
+  # Edge color gradient (continuous)
+  scale_edge_color_gradient(
+    low = "lightblue",
+    high = "darkblue",
+    name = "Nutrient Density"
+  ) +
+  
+  # Edge width scale
+  scale_edge_width(
+    range = c(0.3, 3),
+    name = "Nutrient Density"
   ) +
   theme_void() +
-  labs(title = "Food–Nutrient Bipartite Network (per 100 kcal)",
-       color = "Node Type") +
+  labs(
+    title = "Food–Nutrient Bipartite Network",
+    subtitle = "Edge gradient + thickness represent nutrient density"
+  ) +
   theme(
     legend.position = "right",
     legend.title = element_text(size = 10),
@@ -86,17 +109,26 @@ p1 <- ggraph(g, layout = "bipartite") +
 
 # (B) Projected Food–Food Network
 p2 <- ggraph(food_net, layout = "fr") +
-  geom_edge_link(aes(width = weight), color = "gray70", alpha = 0.5) +
+  geom_edge_link(
+    aes(color = as.factor(weight)),    
+    alpha = 0.8,
+    show.legend = TRUE
+  ) +
   geom_node_point(aes(size = degree(food_net)), color = "darkgreen") +
   geom_node_text(aes(label = name), repel = TRUE, size = 3, max.overlaps = Inf) +
-  scale_edge_width_continuous(
+  scale_color_brewer(
+    palette = "Set1",                
     name = "Shared Nutrients",
-    labels = function(x) sprintf("%.0f nutrients in common", x),
-    range = c(0.3, 2)
+    labels = function(x) paste(x, "nutrients in common")
+  ) +
+  guides(
+    color = guide_legend(override.aes = list(size = 3))
   ) +
   theme_void() +
-  labs(title = "Food–Food Projection (Shared Nutrients)",
-       subtitle = "Edge weight = number of shared nutrients") +
+  labs(
+    title = "Food–Food Projection (Shared Nutrients)",
+    subtitle = "Edge color = number of shared nutrients"
+  ) +
   theme(
     legend.position = "right",
     legend.title = element_text(size = 10),
