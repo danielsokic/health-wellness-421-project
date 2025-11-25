@@ -3,6 +3,7 @@ library(igraph)
 library(readr)
 library(dplyr)
 library(ggraph)
+install.packages("ggplot2")
 library(ggplot2)
 
 # Load and filter data
