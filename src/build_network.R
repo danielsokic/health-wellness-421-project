@@ -167,12 +167,10 @@ p_top20 <- ggraph(food_net_top20, layout = "fr") +
     legend.text = element_text(size = 9)
   )
 
-p_top20
-
 # Display plots
 print(p1)
 print(p2)
-print(p_top10)
+print(p_top20)
 
 # Export metrics
 write_csv(food_centrality, "food_centrality.csv")
