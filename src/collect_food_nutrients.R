@@ -140,20 +140,33 @@ get_food_nutrients_safe <- function(food_name, debug = TRUE) {
 # Run for selected foods (Covers grains, proteins, fruits, vegetables, and dairy)
 foods <- c(
   # Breakfast & snacks
-  "oats", "eggs", "milk", "yogurt", "banana", "apple",
+  "oats", "eggs", "milk", "almonds, raw",
+  "walnuts", "cashews", "chia seeds",
+  
+  # Fruit
+  "banana", "apple", "blueberries", "blackberries", "raspberries",  
+  "strawberries", "mango",
+  "pineapple", 
   
   # Lunch & dinner 
   "rice, cooked", "pasta, cooked", "bread, whole wheat",
-  "chicken breast, cooked", "tofu, firm", "beans, canned",
-  "broccoli, raw", "carrots, raw", "potatoes, baked",
+  "chicken breast, cooked", "tofu, firm",
+  "broccoli, raw",  "potatoes, baked","chicken thigh",
+  "turkey, ground","quinoa",
   
   # Protein & affordable dairy
-  "canned tuna in water", "canned salmon", "sardines, canned in water",
-  "cottage cheese, low fat", "mozzarella, part-skim",
+  "tuna", "canned salmon", "sardines, canned in water",
+  "cottage cheese, low fat", "mozzarella, part-skim","beef, ground 90% lean", 
+  "beef, ground 80% lean","shrimp","greek yogurt, plain, nonfat",
   
   # Affordable sides & veggies
-  "frozen mixed vegetables", "spinach, raw", "lentils, cooked"
+  "frozen mixed vegetables", "spinach, raw", "lentils, cooked",
+  "black beans, canned", "pinto beans, canned", "kidney beans, canned", 
+  "chickpeas, canned", "mushrooms, raw",   
+  "tortilla, flour", "bagel, plain",
+  "peanut butter, natural", "hummus", "tomato soup, canned"
 )
+
 
 data_list <- lapply(foods, function(f) {
   tryCatch({

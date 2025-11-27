@@ -136,9 +136,41 @@ p2 <- ggraph(food_net, layout = "fr") +
     legend.text = element_text(size = 9)
   )
 
+# Projected Food–Food Network (Top 20)
+deg <- degree(food_net)
+top20_nodes <- names(sort(deg, decreasing = TRUE))[1:20]
+
+food_net_top20 <- induced_subgraph(food_net, vids = top20_nodes)
+
+p_top20 <- ggraph(food_net_top20, layout = "fr") +
+  geom_edge_link(
+    aes(color = as.factor(weight)),
+    alpha = 0.8,
+    show.legend = TRUE
+  ) +
+  geom_node_point(aes(size = degree(food_net_top20)), color = "darkgreen") +
+  geom_node_text(aes(label = name), repel = TRUE, size = 3, max.overlaps = Inf) +
+  scale_color_brewer(
+    palette = "Set1",
+    name = "Shared Nutrients",
+    labels = function(x) paste(x, "nutrients in common")
+  ) +
+  guides(color = guide_legend(override.aes = list(size = 3))) +
+  theme_void() +
+  labs(
+    title = "Top 20 Foods by Degree (Shared Nutrient Network)",
+    subtitle = "Induced Subgraph of 20 Highest-Degree Nodes"
+  ) +
+  theme(
+    legend.position = "right",
+    legend.title = element_text(size = 10),
+    legend.text = element_text(size = 9)
+  )
+
 # Display plots
 print(p1)
 print(p2)
+print(p_top20)
 
 # Export metrics
 write_csv(food_centrality, "food_centrality.csv")
