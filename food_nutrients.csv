@@ -1,6 +1,15 @@
 "nutrientName","value","unitName","food","value_per_100kcal"
 "Energy",884,"kcal","oats",100
 "Energy",3699,"kJ","oats",100
+"Calcium, Ca",0,"mg","oats",0
+"Iron, Fe",0,"mg","oats",0
+"Magnesium, Mg",0,"mg","oats",0
+"Potassium, K",0,"mg","oats",0
+"Zinc, Zn",0,"mg","oats",0
+"Vitamin C, total ascorbic acid",0,"mg","oats",0
+"Folate, total",0,"µg","oats",0
+"Vitamin B-12",0,"µg","oats",0
+"Vitamin A, RAE",0,"µg","oats",0
 "Vitamin E (alpha-tocopherol)",14.4,"mg","oats",1.6289592760181
 "Energy",55,"kcal","eggs",100
 "Energy",231,"kJ","eggs",100
@@ -16,6 +25,7 @@
 "Vitamin B-12",0.08,"µg","milk",0.0179372197309417
 "Vitamin A, RAE",16,"µg","milk",3.58744394618834
 "Vitamin E (alpha-tocopherol)",1.22,"mg","milk",0.273542600896861
+"Vitamin D (D2 + D3)",0,"µg","milk",0
 "Calcium, Ca",253.6,"mg","almonds, raw",NA
 "Iron, Fe",3.741,"mg","almonds, raw",NA
 "Magnesium, Mg",257.6,"mg","almonds, raw",NA
@@ -23,7 +33,17 @@
 "Zinc, Zn",2.865,"mg","almonds, raw",NA
 "Energy",884,"kcal","walnuts",100
 "Energy",3699,"kJ","walnuts",100
+"Calcium, Ca",0,"mg","walnuts",0
+"Iron, Fe",0,"mg","walnuts",0
+"Magnesium, Mg",0,"mg","walnuts",0
+"Potassium, K",0,"mg","walnuts",0
+"Zinc, Zn",0,"mg","walnuts",0
+"Vitamin C, total ascorbic acid",0,"mg","walnuts",0
+"Folate, total",0,"µg","walnuts",0
+"Vitamin B-12",0,"µg","walnuts",0
+"Vitamin A, RAE",0,"µg","walnuts",0
 "Vitamin E (alpha-tocopherol)",0.4,"mg","walnuts",0.0452488687782805
+"Vitamin D (D2 + D3)",0,"µg","walnuts",0
 "Calcium, Ca",41.95,"mg","cashews",NA
 "Iron, Fe",5.988,"mg","cashews",NA
 "Magnesium, Mg",250.6,"mg","cashews",NA
@@ -38,6 +58,7 @@
 "Zinc, Zn",4.58,"mg","chia seeds",0.94238683127572
 "Vitamin C, total ascorbic acid",1.6,"mg","chia seeds",0.329218106995885
 "Folate, total",49,"µg","chia seeds",10.082304526749
+"Vitamin B-12",0,"µg","chia seeds",0
 "Vitamin E (alpha-tocopherol)",0.5,"mg","chia seeds",0.102880658436214
 "Energy",346,"kcal","banana",100
 "Energy",1448,"kJ","banana",100
@@ -48,8 +69,10 @@
 "Zinc, Zn",0.61,"mg","banana",0.176300578034682
 "Vitamin C, total ascorbic acid",7,"mg","banana",2.02312138728324
 "Folate, total",14,"µg","banana",4.04624277456647
+"Vitamin B-12",0,"µg","banana",0
 "Vitamin A, RAE",12,"µg","banana",3.46820809248555
 "Vitamin E (alpha-tocopherol)",0.39,"mg","banana",0.11271676300578
+"Vitamin D (D2 + D3)",0,"µg","banana",0
 "Energy",254,"kcal","apple",100
 "Energy",1063,"kJ","apple",100
 "Calcium, Ca",30,"mg","apple",11.8110236220472
@@ -76,8 +99,10 @@
 "Zinc, Zn",0.53,"mg","blackberries",1.23255813953488
 "Vitamin C, total ascorbic acid",21,"mg","blackberries",48.8372093023256
 "Folate, total",25,"µg","blackberries",58.1395348837209
+"Vitamin B-12",0,"µg","blackberries",0
 "Vitamin A, RAE",11,"µg","blackberries",25.5813953488372
 "Vitamin E (alpha-tocopherol)",1.17,"mg","blackberries",2.72093023255814
+"Vitamin D (D2 + D3)",0,"µg","blackberries",0
 "Calcium, Ca",16.41,"mg","raspberries",NA
 "Iron, Fe",0.4501,"mg","raspberries",NA
 "Magnesium, Mg",19.15,"mg","raspberries",NA
@@ -93,8 +118,10 @@
 "Zinc, Zn",0.14,"mg","strawberries",0.4375
 "Vitamin C, total ascorbic acid",58.8,"mg","strawberries",183.75
 "Folate, total",24,"µg","strawberries",75
+"Vitamin B-12",0,"µg","strawberries",0
 "Vitamin A, RAE",1,"µg","strawberries",3.125
 "Vitamin E (alpha-tocopherol)",0.29,"mg","strawberries",0.90625
+"Vitamin D (D2 + D3)",0,"µg","strawberries",0
 "Energy",60,"kcal","mango",100
 "Energy",250,"kJ","mango",100
 "Calcium, Ca",11,"mg","mango",18.3333333333333
@@ -104,8 +131,10 @@
 "Zinc, Zn",0.09,"mg","mango",0.15
 "Vitamin C, total ascorbic acid",36.4,"mg","mango",60.6666666666667
 "Folate, total",43,"µg","mango",71.6666666666667
+"Vitamin B-12",0,"µg","mango",0
 "Vitamin A, RAE",54,"µg","mango",90
 "Vitamin E (alpha-tocopherol)",0.9,"mg","mango",1.5
+"Vitamin D (D2 + D3)",0,"µg","mango",0
 "Calcium, Ca",12.5,"mg","pineapple",NA
 "Iron, Fe",0.054,"mg","pineapple",NA
 "Magnesium, Mg",13.38,"mg","pineapple",NA
@@ -119,8 +148,12 @@
 "Magnesium, Mg",3,"mg","rice, cooked",2.77777777777778
 "Potassium, K",4,"mg","rice, cooked",3.7037037037037
 "Zinc, Zn",0.25,"mg","rice, cooked",0.231481481481481
+"Vitamin C, total ascorbic acid",0,"mg","rice, cooked",0
 "Folate, total",1,"µg","rice, cooked",0.925925925925926
+"Vitamin B-12",0,"µg","rice, cooked",0
+"Vitamin A, RAE",0,"µg","rice, cooked",0
 "Vitamin E (alpha-tocopherol)",0.03,"mg","rice, cooked",0.0277777777777778
+"Vitamin D (D2 + D3)",0,"µg","rice, cooked",0
 "Energy",157,"kcal","pasta, cooked",100
 "Energy",655,"kJ","pasta, cooked",100
 "Calcium, Ca",7,"mg","pasta, cooked",4.45859872611465
@@ -128,8 +161,12 @@
 "Magnesium, Mg",18,"mg","pasta, cooked",11.4649681528662
 "Potassium, K",44,"mg","pasta, cooked",28.0254777070064
 "Zinc, Zn",0.51,"mg","pasta, cooked",0.32484076433121
+"Vitamin C, total ascorbic acid",0,"mg","pasta, cooked",0
 "Folate, total",73,"µg","pasta, cooked",46.4968152866242
+"Vitamin B-12",0,"µg","pasta, cooked",0
+"Vitamin A, RAE",0,"µg","pasta, cooked",0
 "Vitamin E (alpha-tocopherol)",0.06,"mg","pasta, cooked",0.0382165605095541
+"Vitamin D (D2 + D3)",0,"µg","pasta, cooked",0
 "Energy",262,"kcal","bread, whole wheat",100
 "Energy",1096,"kJ","bread, whole wheat",100
 "Calcium, Ca",15,"mg","bread, whole wheat",5.72519083969466
@@ -137,8 +174,12 @@
 "Magnesium, Mg",69,"mg","bread, whole wheat",26.3358778625954
 "Potassium, K",170,"mg","bread, whole wheat",64.8854961832061
 "Zinc, Zn",1.52,"mg","bread, whole wheat",0.580152671755725
+"Vitamin C, total ascorbic acid",0,"mg","bread, whole wheat",0
 "Folate, total",35,"µg","bread, whole wheat",13.3587786259542
+"Vitamin B-12",0,"µg","bread, whole wheat",0
+"Vitamin A, RAE",0,"µg","bread, whole wheat",0
 "Vitamin E (alpha-tocopherol)",0.61,"mg","bread, whole wheat",0.232824427480916
+"Vitamin D (D2 + D3)",0,"µg","bread, whole wheat",0
 "Energy",252,"kcal","chicken breast, cooked",100
 "Energy",1053,"kJ","chicken breast, cooked",100
 "Calcium, Ca",14,"mg","chicken breast, cooked",5.55555555555556
@@ -146,8 +187,10 @@
 "Magnesium, Mg",26,"mg","chicken breast, cooked",10.3174603174603
 "Potassium, K",225,"mg","chicken breast, cooked",89.2857142857143
 "Zinc, Zn",0.77,"mg","chicken breast, cooked",0.305555555555556
+"Vitamin C, total ascorbic acid",0,"mg","chicken breast, cooked",0
 "Folate, total",12,"µg","chicken breast, cooked",4.76190476190476
 "Vitamin B-12",0.44,"µg","chicken breast, cooked",0.174603174603175
+"Vitamin A, RAE",0,"µg","chicken breast, cooked",0
 "Vitamin E (alpha-tocopherol)",0.37,"mg","chicken breast, cooked",0.146825396825397
 "Energy",85,"kcal","tofu, firm",100
 "Energy",357,"kJ","tofu, firm",100
@@ -174,7 +217,10 @@
 "Zinc, Zn",0.29,"mg","potatoes, baked",0.311827956989247
 "Vitamin C, total ascorbic acid",12.8,"mg","potatoes, baked",13.7634408602151
 "Folate, total",9,"µg","potatoes, baked",9.67741935483871
+"Vitamin B-12",0,"µg","potatoes, baked",0
+"Vitamin A, RAE",0,"µg","potatoes, baked",0
 "Vitamin E (alpha-tocopherol)",0.04,"mg","potatoes, baked",0.043010752688172
+"Vitamin D (D2 + D3)",0,"µg","potatoes, baked",0
 "Energy",440,"kcal","chicken thigh",100
 "Energy",1839,"kJ","chicken thigh",100
 "Calcium, Ca",6,"mg","chicken thigh",1.36363636363636
@@ -182,6 +228,7 @@
 "Magnesium, Mg",8,"mg","chicken thigh",1.81818181818182
 "Potassium, K",119,"mg","chicken thigh",27.0454545454545
 "Zinc, Zn",0.65,"mg","chicken thigh",0.147727272727273
+"Vitamin C, total ascorbic acid",0,"mg","chicken thigh",0
 "Folate, total",2,"µg","chicken thigh",0.454545454545455
 "Vitamin B-12",0.65,"µg","chicken thigh",0.147727272727273
 "Vitamin A, RAE",59,"µg","chicken thigh",13.4090909090909
@@ -194,6 +241,7 @@
 "Magnesium, Mg",30,"mg","turkey, ground",14.7783251231527
 "Potassium, K",294,"mg","turkey, ground",144.827586206897
 "Zinc, Zn",3.11,"mg","turkey, ground",1.5320197044335
+"Vitamin C, total ascorbic acid",0,"mg","turkey, ground",0
 "Folate, total",7,"µg","turkey, ground",3.44827586206897
 "Vitamin B-12",1.34,"µg","turkey, ground",0.660098522167488
 "Vitamin A, RAE",24,"µg","turkey, ground",11.8226600985222
@@ -206,8 +254,12 @@
 "Magnesium, Mg",64,"mg","quinoa",53.3333333333333
 "Potassium, K",172,"mg","quinoa",143.333333333333
 "Zinc, Zn",1.09,"mg","quinoa",0.908333333333333
+"Vitamin C, total ascorbic acid",0,"mg","quinoa",0
 "Folate, total",42,"µg","quinoa",35
+"Vitamin B-12",0,"µg","quinoa",0
+"Vitamin A, RAE",0,"µg","quinoa",0
 "Vitamin E (alpha-tocopherol)",0.63,"mg","quinoa",0.525
+"Vitamin D (D2 + D3)",0,"µg","quinoa",0
 "Energy",187,"kcal","tuna",100
 "Energy",782,"kJ","tuna",100
 "Calcium, Ca",17,"mg","tuna",9.09090909090909
@@ -226,6 +278,7 @@
 "Magnesium, Mg",30,"mg","canned salmon",19.6078431372549
 "Potassium, K",329,"mg","canned salmon",215.032679738562
 "Zinc, Zn",0.67,"mg","canned salmon",0.437908496732026
+"Vitamin C, total ascorbic acid",0,"mg","canned salmon",0
 "Vitamin B-12",0.4,"µg","canned salmon",0.261437908496732
 "Vitamin A, RAE",39,"µg","canned salmon",25.4901960784314
 "Vitamin E (alpha-tocopherol)",1.88,"mg","canned salmon",1.22875816993464
@@ -237,6 +290,7 @@
 "Magnesium, Mg",39,"mg","sardines, canned in water",18.75
 "Potassium, K",397,"mg","sardines, canned in water",190.865384615385
 "Zinc, Zn",1.31,"mg","sardines, canned in water",0.629807692307692
+"Vitamin C, total ascorbic acid",0,"mg","sardines, canned in water",0
 "Folate, total",10,"µg","sardines, canned in water",4.80769230769231
 "Vitamin B-12",8.94,"µg","sardines, canned in water",4.29807692307692
 "Vitamin A, RAE",32,"µg","sardines, canned in water",15.3846153846154
@@ -249,6 +303,7 @@
 "Magnesium, Mg",8,"mg","cottage cheese, low fat",3.84615384615385
 "Potassium, K",247,"mg","cottage cheese, low fat",118.75
 "Zinc, Zn",0.57,"mg","cottage cheese, low fat",0.274038461538462
+"Vitamin C, total ascorbic acid",0,"mg","cottage cheese, low fat",0
 "Folate, total",19,"µg","cottage cheese, low fat",9.13461538461538
 "Vitamin B-12",0.92,"µg","cottage cheese, low fat",0.442307692307692
 "Vitamin A, RAE",161,"µg","cottage cheese, low fat",77.4038461538462
@@ -261,6 +316,7 @@
 "Magnesium, Mg",23,"mg","mozzarella, part-skim",9.05511811023622
 "Potassium, K",84,"mg","mozzarella, part-skim",33.0708661417323
 "Zinc, Zn",2.76,"mg","mozzarella, part-skim",1.08661417322835
+"Vitamin C, total ascorbic acid",0,"mg","mozzarella, part-skim",0
 "Folate, total",9,"µg","mozzarella, part-skim",3.54330708661417
 "Vitamin B-12",0.82,"µg","mozzarella, part-skim",0.322834645669291
 "Vitamin A, RAE",127,"µg","mozzarella, part-skim",50
@@ -273,6 +329,7 @@
 "Magnesium, Mg",20,"mg","beef, ground 90% lean",11.3636363636364
 "Potassium, K",321,"mg","beef, ground 90% lean",182.386363636364
 "Zinc, Zn",4.79,"mg","beef, ground 90% lean",2.72159090909091
+"Vitamin C, total ascorbic acid",0,"mg","beef, ground 90% lean",0
 "Folate, total",6,"µg","beef, ground 90% lean",3.40909090909091
 "Vitamin B-12",2.21,"µg","beef, ground 90% lean",1.25568181818182
 "Vitamin A, RAE",4,"µg","beef, ground 90% lean",2.27272727272727
@@ -285,6 +342,7 @@
 "Magnesium, Mg",17,"mg","beef, ground 80% lean",6.69291338582677
 "Potassium, K",270,"mg","beef, ground 80% lean",106.299212598425
 "Zinc, Zn",4.18,"mg","beef, ground 80% lean",1.64566929133858
+"Vitamin C, total ascorbic acid",0,"mg","beef, ground 80% lean",0
 "Folate, total",7,"µg","beef, ground 80% lean",2.75590551181102
 "Vitamin B-12",2.14,"µg","beef, ground 80% lean",0.84251968503937
 "Vitamin A, RAE",4,"µg","beef, ground 80% lean",1.5748031496063
@@ -307,6 +365,7 @@
 "Vitamin B-12",0.7,"µg","greek yogurt, plain, nonfat",1.14754098360656
 "Vitamin A, RAE",1,"µg","greek yogurt, plain, nonfat",1.63934426229508
 "Vitamin E (alpha-tocopherol)",0.01,"mg","greek yogurt, plain, nonfat",0.0163934426229508
+"Vitamin D (D2 + D3)",0,"µg","greek yogurt, plain, nonfat",0
 "Energy",72,"kcal","frozen mixed vegetables",100
 "Energy",301,"kJ","frozen mixed vegetables",100
 "Calcium, Ca",25,"mg","frozen mixed vegetables",34.7222222222222
@@ -316,7 +375,9 @@
 "Zinc, Zn",0.45,"mg","frozen mixed vegetables",0.625
 "Vitamin C, total ascorbic acid",10.4,"mg","frozen mixed vegetables",14.4444444444444
 "Folate, total",29,"µg","frozen mixed vegetables",40.2777777777778
+"Vitamin B-12",0,"µg","frozen mixed vegetables",0
 "Vitamin A, RAE",254,"µg","frozen mixed vegetables",352.777777777778
+"Vitamin D (D2 + D3)",0,"µg","frozen mixed vegetables",0
 "Energy",23,"kcal","spinach, raw",100
 "Energy",97,"kJ","spinach, raw",100
 "Calcium, Ca",99,"mg","spinach, raw",430.434782608696
@@ -326,8 +387,10 @@
 "Zinc, Zn",0.53,"mg","spinach, raw",2.30434782608696
 "Vitamin C, total ascorbic acid",28.1,"mg","spinach, raw",122.173913043478
 "Folate, total",194,"µg","spinach, raw",843.478260869565
+"Vitamin B-12",0,"µg","spinach, raw",0
 "Vitamin A, RAE",469,"µg","spinach, raw",2039.13043478261
 "Vitamin E (alpha-tocopherol)",2.03,"mg","spinach, raw",8.82608695652174
+"Vitamin D (D2 + D3)",0,"µg","spinach, raw",0
 "Energy",114,"kcal","lentils, cooked",100
 "Energy",477,"kJ","lentils, cooked",100
 "Calcium, Ca",19,"mg","lentils, cooked",16.6666666666667
@@ -337,7 +400,10 @@
 "Zinc, Zn",1.27,"mg","lentils, cooked",1.1140350877193
 "Vitamin C, total ascorbic acid",1.5,"mg","lentils, cooked",1.31578947368421
 "Folate, total",181,"µg","lentils, cooked",158.771929824561
+"Vitamin B-12",0,"µg","lentils, cooked",0
+"Vitamin A, RAE",0,"µg","lentils, cooked",0
 "Vitamin E (alpha-tocopherol)",0.11,"mg","lentils, cooked",0.0964912280701754
+"Vitamin D (D2 + D3)",0,"µg","lentils, cooked",0
 "Energy",91,"kcal","black beans, canned",100
 "Energy",382,"kJ","black beans, canned",100
 "Calcium, Ca",35,"mg","black beans, canned",38.4615384615385
@@ -347,6 +413,7 @@
 "Zinc, Zn",1.1,"mg","black beans, canned",1.20879120879121
 "Vitamin C, total ascorbic acid",0.2,"mg","black beans, canned",0.21978021978022
 "Folate, total",66,"µg","black beans, canned",72.5274725274725
+"Vitamin B-12",0,"µg","black beans, canned",0
 "Vitamin A, RAE",22,"µg","black beans, canned",24.1758241758242
 "Vitamin E (alpha-tocopherol)",0.36,"mg","black beans, canned",0.395604395604396
 "Energy",114,"kcal","pinto beans, canned",100
@@ -358,6 +425,8 @@
 "Zinc, Zn",0.61,"mg","pinto beans, canned",0.535087719298246
 "Vitamin C, total ascorbic acid",0.1,"mg","pinto beans, canned",0.087719298245614
 "Folate, total",24,"µg","pinto beans, canned",21.0526315789474
+"Vitamin B-12",0,"µg","pinto beans, canned",0
+"Vitamin D (D2 + D3)",0,"µg","pinto beans, canned",0
 "Energy",84,"kcal","kidney beans, canned",100
 "Energy",353,"kJ","kidney beans, canned",100
 "Calcium, Ca",34,"mg","kidney beans, canned",40.4761904761905
@@ -367,7 +436,9 @@
 "Zinc, Zn",0.46,"mg","kidney beans, canned",0.547619047619048
 "Vitamin C, total ascorbic acid",1.2,"mg","kidney beans, canned",1.42857142857143
 "Folate, total",36,"µg","kidney beans, canned",42.8571428571429
+"Vitamin B-12",0,"µg","kidney beans, canned",0
 "Vitamin E (alpha-tocopherol)",0.02,"mg","kidney beans, canned",0.0238095238095238
+"Vitamin D (D2 + D3)",0,"µg","kidney beans, canned",0
 "Calcium, Ca",40.48,"mg","chickpeas, canned",NA
 "Iron, Fe",1.042,"mg","chickpeas, canned",NA
 "Magnesium, Mg",28.41,"mg","chickpeas, canned",NA
@@ -389,7 +460,12 @@
 "Magnesium, Mg",22,"mg","tortilla, flour",7.18954248366013
 "Potassium, K",125,"mg","tortilla, flour",40.8496732026144
 "Zinc, Zn",0.53,"mg","tortilla, flour",0.173202614379085
+"Vitamin C, total ascorbic acid",0,"mg","tortilla, flour",0
 "Folate, total",94,"µg","tortilla, flour",30.718954248366
+"Vitamin B-12",0,"µg","tortilla, flour",0
+"Vitamin A, RAE",0,"µg","tortilla, flour",0
+"Vitamin E (alpha-tocopherol)",0,"mg","tortilla, flour",0
+"Vitamin D (D2 + D3)",0,"µg","tortilla, flour",0
 "Energy",451,"kcal","bagel, plain",100
 "Energy",1887,"kJ","bagel, plain",100
 "Calcium, Ca",24,"mg","bagel, plain",5.32150776053215
@@ -397,8 +473,12 @@
 "Magnesium, Mg",39,"mg","bagel, plain",8.64745011086474
 "Potassium, K",140,"mg","bagel, plain",31.0421286031042
 "Zinc, Zn",1,"mg","bagel, plain",0.221729490022173
+"Vitamin C, total ascorbic acid",0,"mg","bagel, plain",0
 "Folate, total",142,"µg","bagel, plain",31.4855875831486
+"Vitamin B-12",0,"µg","bagel, plain",0
+"Vitamin A, RAE",0,"µg","bagel, plain",0
 "Vitamin E (alpha-tocopherol)",0.81,"mg","bagel, plain",0.17960088691796
+"Vitamin D (D2 + D3)",0,"µg","bagel, plain",0
 "Calcium, Ca",49.85,"mg","peanut butter, natural",NA
 "Iron, Fe",1.853,"mg","peanut butter, natural",NA
 "Magnesium, Mg",192.6,"mg","peanut butter, natural",NA
@@ -413,9 +493,12 @@
 "Magnesium, Mg",75,"mg","hummus",31.6455696202532
 "Potassium, K",312,"mg","hummus",131.645569620253
 "Zinc, Zn",1.44,"mg","hummus",0.607594936708861
+"Vitamin C, total ascorbic acid",0,"mg","hummus",0
 "Folate, total",48,"µg","hummus",20.253164556962
+"Vitamin B-12",0,"µg","hummus",0
 "Vitamin A, RAE",1,"µg","hummus",0.421940928270042
 "Vitamin E (alpha-tocopherol)",1.54,"mg","hummus",0.649789029535865
+"Vitamin D (D2 + D3)",0,"µg","hummus",0
 "Energy",66,"kcal","tomato soup, canned",100
 "Energy",275,"kJ","tomato soup, canned",100
 "Calcium, Ca",13,"mg","tomato soup, canned",19.6969696969697
@@ -424,5 +507,8 @@
 "Potassium, K",562,"mg","tomato soup, canned",851.515151515152
 "Zinc, Zn",0.18,"mg","tomato soup, canned",0.272727272727273
 "Vitamin C, total ascorbic acid",12.9,"mg","tomato soup, canned",19.5454545454545
+"Folate, total",0,"µg","tomato soup, canned",0
+"Vitamin B-12",0,"µg","tomato soup, canned",0
 "Vitamin A, RAE",20,"µg","tomato soup, canned",30.3030303030303
 "Vitamin E (alpha-tocopherol)",0.34,"mg","tomato soup, canned",0.515151515151515
+"Vitamin D (D2 + D3)",0,"µg","tomato soup, canned",0

@@ -25,7 +25,11 @@ edges <- nutrient_data %>%
 
 g <- graph_from_data_frame(edges, directed = FALSE)
 
-V(g)$type <- V(g)$name %in% unique(edges$nutrientName)
+# IMPORTANT: type = TRUE → FOOD, type = FALSE → NUTRIENT
+V(g)$type <- V(g)$name %in% unique(edges$food)
+V(g)$node_type <- ifelse(V(g)$type, "Food", "Nutrient")
+
+# Edge weights = nutrient density per 100 kcal
 E(g)$weight <- edges$value_per_100kcal
 
 cat("\n--- GRAPH SUMMARY ---\n")
@@ -36,7 +40,8 @@ cat("Is bipartite:", is_bipartite(g), "\n\n")
 # -------------------------------
 # Bipartite Projection (foods only)
 # -------------------------------
-proj <- bipartite_projection(g)
+# With types given, proj1 = vertices where type == TRUE (foods)
+proj <- bipartite_projection(g, types = V(g)$type)
 food_net <- proj$proj1
 
 V(food_net)$label <- V(food_net)$name
@@ -45,14 +50,14 @@ V(food_net)$label <- V(food_net)$name
 # Food centrality metrics
 # -------------------------------
 food_centrality <- data.frame(
-  food = V(food_net)$name,
-  degree = degree(food_net),
+  food       = V(food_net)$name,
+  degree     = degree(food_net),
   betweenness = betweenness(food_net),
-  closeness = closeness(food_net)
+  closeness   = closeness(food_net)
 ) %>%
   arrange(desc(degree))
 
-cat("Top 5 foods by degree:\n")
+cat("Top 5 foods by degree (shared nutrients):\n")
 print(head(food_centrality, 5))
 
 write_csv(food_centrality, "food_centrality.csv")
@@ -74,12 +79,15 @@ print(sizes(comm))
 # -------------------------------
 p1 <- ggraph(g, layout = "bipartite") +
   geom_edge_link(aes(width = weight), alpha = 0.4, color = "gray70") +
-  geom_node_point(aes(color = type), size = 4) +
-  geom_node_text(aes(label = name, color = type),
-                 repel = TRUE, size = 2.7, show.legend = FALSE) +
-  scale_color_manual(values = c("tomato", "steelblue"),
-                     labels = c("Food", "Nutrient"),
-                     name = "Node Type") +
+  geom_node_point(aes(color = node_type), size = 4) +
+  geom_node_text(
+    aes(label = name, color = node_type),
+    repel = TRUE, size = 2.7, show.legend = FALSE
+  ) +
+  scale_color_manual(
+    values = c("Food" = "tomato", "Nutrient" = "steelblue"),
+    name = "Node Type"
+  ) +
   scale_edge_width(range = c(0.2, 2)) +
   theme_void() +
   labs(title = "Food–Nutrient Bipartite Network")
@@ -105,30 +113,45 @@ print(p2)
 # -------------------------------
 # Additional Global Metrics
 # -------------------------------
-bip_deg <- degree(g)
-cat("\nTop 10 nodes by degree:\n")
-print(sort(bip_deg, decreasing = TRUE)[1:10])
-
-bip_bet <- betweenness(g)
-cat("\nTop 10 nodes by betweenness:\n")
-print(sort(bip_bet, decreasing = TRUE)[1:10])
-
-bip_close <- closeness(g)
-cat("\nTop 10 nodes by closeness:\n")
-print(sort(bip_close, decreasing = TRUE)[1:10])
-
-# Export bipartite metrics for foods only
 bip_metrics <- data.frame(
-  node = names(V(g)),
-  degree = degree(g),
+  node       = V(g)$name,
+  node_type  = V(g)$node_type,
+  degree     = degree(g),
   betweenness = betweenness(g),
-  closeness = closeness(g)
+  closeness   = closeness(g)
 )
 
-bip_food_metrics <- bip_metrics[V(g)$type == FALSE, ]
+cat("\nTop 10 FOOD nodes by degree:\n")
+print(
+  bip_metrics %>%
+    filter(node_type == "Food") %>%
+    arrange(desc(degree)) %>%
+    head(10)
+)
+
+cat("\nTop 10 FOOD nodes by betweenness:\n")
+print(
+  bip_metrics %>%
+    filter(node_type == "Food") %>%
+    arrange(desc(betweenness)) %>%
+    head(10)
+)
+
+cat("\nTop 10 FOOD nodes by closeness:\n")
+print(
+  bip_metrics %>%
+    filter(node_type == "Food") %>%
+    arrange(desc(closeness)) %>%
+    head(10)
+)
+
+# Export bipartite metrics for foods only
+bip_food_metrics <- bip_metrics %>%
+  filter(node_type == "Food")
+
 write_csv(bip_food_metrics, "bipartite_food_metrics.csv")
 
 # Save full network
 write_graph(g, "food_nutrient_network.graphml", format = "graphml")
 
-cat("\n Analysis complete. Plots rendered and files exported.\n")
+cat("\n✅ Analysis complete. Plots rendered and files exported.\n")

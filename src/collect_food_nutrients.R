@@ -44,7 +44,7 @@ get_food_nutrients_safe <- function(food_name, debug = TRUE) {
   
   fdc_id <- search_data$foods$fdcId[1]
   data_type <- search_data$foods$dataType[1]
-  message("ound match for ", food_name, " (FDC ID: ", fdc_id, ", DataType: ", data_type, ")")
+  message("Found match for ", food_name, " (FDC ID: ", fdc_id, ", DataType: ", data_type, ")")
   
   # 2. Detail endpoint
   food_url <- paste0("https://api.nal.usda.gov/fdc/v1/food/", fdc_id, "?api_key=", api_key)
@@ -55,7 +55,7 @@ get_food_nutrients_safe <- function(food_name, debug = TRUE) {
     return(NULL)
   }
   if (status_code(food_res) != 200) {
-    message("iled to get details for ", food_name, " (status ", status_code(food_res), ")")
+    message("Compliled to get details for ", food_name, " (status ", status_code(food_res), ")")
     return(NULL)
   }
   
@@ -110,7 +110,7 @@ get_food_nutrients_safe <- function(food_name, debug = TRUE) {
       "Vitamin B-12", "Vitamin E (alpha-tocopherol)"
     )) %>%
     mutate(food = food_name) %>%
-    filter(!is.na(value), value > 0)
+    filter(!is.na(value))
   
   # 5. Normalize nutrient values to per 100 kcal
   if ("Energy" %in% nutrients$nutrientName) {
